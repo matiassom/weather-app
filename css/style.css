@@ -2,14 +2,14 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 @font-face {
     font-family: 'DM Sans';
-    src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    src: url('./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
     font-weight: 300, 500, 600, 600i, 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bricolage Grotesque" ;
-    src: url(/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+    src: url("./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
     font-weight: 700;
 }
 
@@ -89,7 +89,7 @@ main h1{
     color: white;
     padding: 0.5rem;
     padding-left: 40px;
-    background-image: url(/assets/images/icon-search.svg);
+    background-image: url("./assets/images/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 18px;
@@ -115,7 +115,7 @@ main h1{
     width: 100%;
     height: auto;
     
-    background-image: url(/assets/images/bg-today-large.svg);
+    background-image: url("./assets/images/bg-today-large.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -230,7 +230,7 @@ main h1{
 .dayCardSymbol{
     height: 50px;
     width: 50px;
-    background-image: url("/assets/images/cicon-partly-cloudy.webp");
+    background-image: url("./assets/images/cicon-partly-cloudy.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
