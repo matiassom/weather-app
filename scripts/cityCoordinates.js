@@ -22,8 +22,6 @@ async function cityFetch() {
    
 
     cityAndCountry.innerHTML = datos.results[0].admin1+" / "+datos.results[0].country;
-    console.log(datos.results[0].latitude);
-    console.log(datos.results[0].longitude);
 
     weather(datos.results[0].latitude,datos.results[0].longitude)
 

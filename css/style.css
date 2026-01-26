@@ -25,7 +25,8 @@ body{
 }
 
 header{
-    width: 80%;
+    max-width: 80%;
+    min-width: 1000px;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -54,7 +55,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    max-width: 80%;
+    min-width: 1000px;
     height: auto;
     margin-bottom: 5rem;
 }
@@ -190,7 +192,7 @@ main h1{
     margin-left: 1rem;
     font-family: 'DM Sans';
     color:  hsl(240, 6%, 70%);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
  }
 
@@ -230,7 +232,7 @@ main h1{
 .dayCardSymbol{
     height: 50px;
     width: 50px;
-    background-image: url("../assets/images/cicon-partly-cloudy.webp");
+    /*background-image: url("../assets/images/cicon-partly-cloudy.webp");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -241,7 +243,11 @@ main h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
+}
+
+.dayCardTempMax .dayCardTempMin{
+    font-size: .7rem;
 }
 
 #right-info{
