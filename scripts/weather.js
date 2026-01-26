@@ -12,6 +12,7 @@ async function weather(lat,lon) {
     const fieldMax = document.querySelectorAll(".dayCardTempMax");
     const fieldMin = document.querySelectorAll(".dayCardTempMin");
     const CardSymbol = document.querySelectorAll(".dayCardSymbol");
+    const dayName = document.querySelectorAll(".dayCardName")
 
 
     
@@ -42,11 +43,18 @@ async function weather(lat,lon) {
         windData.innerHTML = datos.current.wind_speed_10m +" "+ datos.current_units.wind_speed_10m;
         precipitationData.innerHTML = datos.current.precipitation +" "+ datos.current_units.precipitation;
         
+    
+ 
+
+
         for(n=0;n<7;n++){
             fieldMax[n].innerHTML= datos.daily.temperature_2m_max[n]+"°";
             fieldMin[n].innerHTML= datos.daily.temperature_2m_min[n]+"°";
 
             CardSymbol[n].classList.add("imgTempBig"+datos.daily.weather_code[n]);
+
+            let days = new Date(datos.daily.time[n] + "T00:00:00");    
+            dayName[n].innerHTML = days.toLocaleDateString('en-US', { weekday: 'long' });
         }
 
         weatherCode(wcode);//Esta linea dibuja el weather_code principal.
