@@ -1,0 +1,258 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: 300, 500, 600, 600i, 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bricolage Grotesque" ;
+    src: url(/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+    font-weight: 700;
+}
+
+
+body{
+    background:  hsl(243, 96%, 9%);
+    color: white;
+    font-family: "DM Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header{
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 110px;
+    background-color: hsl(243, 23%, 30%);
+    color: white;
+    border-radius: 10px;  
+    border: none;
+    cursor: pointer;
+}
+
+#header-menu{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+main h1{
+    padding: .5rem;
+    font-family: "Bricolage Grotesque" ;
+}
+
+#search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+    width: 70%;
+}
+
+#search-box button{
+    background-color: hsl(233, 67%, 56%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#inputPlace{
+    background-color: hsl(243, 23%, 30%);
+    border: none;
+    border-radius: 5px;
+    margin-right: .5rem;
+    width: 50%;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 40px;
+    background-image: url(/assets/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px;
+}
+
+
+#principal{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    width: 100%;
+    height: auto;
+    min-height: 530px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 20% 30%;
+}
+
+#left-info-A{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end:2;
+    width: 100%;
+    height: auto;
+    
+    background-image: url(/assets/images/bg-today-large.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#countryAndDate{
+    display: flex;
+    flex-direction: column;
+}
+
+#countryAndDate #cityAndCountry{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#countryAndDate #dateAndDay{
+    margin-left: 1rem;
+}
+
+#tempBig{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#tempBig span{
+    font-size: 80px;
+    margin-right: 2rem;
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+#left-info-B{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+
+}
+
+ .mainDataField{
+    width: 23%;
+    height: 90px;
+    background-color: hsl(243, 27%, 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ .dataKind{
+    margin-left: 1rem;
+    color:  hsl(240, 6%, 70%);
+    font-family: 'DM Sans';
+ }
+
+ .dataDate{
+    margin-left: 1rem;
+    font-family: 'DM Sans';
+    color:  hsl(240, 6%, 70%);
+    font-size: 2rem;
+    font-weight: bold;
+ }
+
+#left-info-C{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end:4;
+    
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#divCardList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.dayCard{
+    margin-top: 1rem;
+    width: 13%;
+    height: 85%;
+    background-color: hsl(243, 27%, 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'DM Sans';
+    color:  hsl(240, 6%, 70%);
+}
+
+.dayCardSymbol{
+    height: 50px;
+    width: 50px;
+    background-image: url("/assets/images/cicon-partly-cloudy.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+
+}
+
+.dayCardTemps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#right-info{
+    background-color:  hsl(243, 27%, 20%);
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: auto;
+    grid-column-start:2;
+    grid-row-start:1;
+    grid-row-end:4;
+
+}

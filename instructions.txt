@@ -1,0 +1,78 @@
+Aunque no tengo la capacidad de generar y enviarte un archivo .fig descargable directamente (ya que soy una IA de procesamiento de texto e imágenes), puedo darte todas las especificaciones de diseño (Design Specs) y la estructura para que lo armes en Figma en cuestión de minutos.
+
+Aquí tienes la "Receta de Diseño" detallada de esta interfaz:
+
+1. Paleta de Colores (Aproximada)
+Copia estos códigos Hex en tus estilos de Figma:
+
+Fondo Principal (Deep Navy): #060818 (El color oscuro de base).
+
+Fondo de Tarjetas (Cards & Sidebar): #16172E (Para la lista de horas y las tarjetas pequeñas).
+
+Gradiente Tarjeta Principal:
+
+Inicio: #2C3E9E (Azul medio).
+
+Fin: #4B24B3 (Violeta oscuro).
+
+Acento (Sol/Iconos): #FFC800 (Amarillo vibrante).
+
+Texto Principal: #FFFFFF (Blanco puro).
+
+Texto Secundario: #A0A0B0 (Gris azulado claro).
+
+Botón CTA (Search): #4B56D2 (Azul índigo).
+
+2. Tipografía
+Parece una fuente Sans-Serif geométrica y moderna.
+
+Fuente recomendada: Inter, Poppins, o DM Sans (Google Fonts).
+
+Tamaños:
+
+H1 (Grados grandes): ~64px - 72px (Bold).
+
+H2 (Títulos secciones): ~18px - 20px (Semi-bold).
+
+Cuerpo (Textos normales): ~14px - 16px (Regular).
+
+Etiquetas pequeñas: ~12px.
+
+3. Estructura y Layout (Para Auto Layout)
+Si usas Auto Layout en Figma, configúralo así:
+
+Grid General: 2 Columnas.
+
+Columna Izquierda (70%): Contiene el Header, Buscador, Tarjeta Principal, Stats Grid y Pronóstico Semanal.
+
+Columna Derecha (30%): Contiene el panel de "Hourly forecast".
+
+Radio de Borde (Corner Radius):
+
+Tarjetas grandes: 24px.
+
+Tarjetas pequeñas (días/stats): 16px.
+
+Botones/Input: 12px.
+
+Espaciado (Gap): Parece usar un sistema de 8pt (gaps de 16px o 24px entre tarjetas).
+
+4. Detalles de los Componentes
+A. Tarjeta Principal ("Berlin, Germany")
+Fondo: Linear Gradient (de izquierda superior a derecha inferior).
+
+Contenido: Texto alineado a la izquierda, Temperatura grande a la derecha.
+
+Decoración: Círculos difuminados (Blur ~100) detrás de los elementos para dar profundidad.
+
+B. Grid de Estadísticas (Fila central)
+4 tarjetas idénticas.
+
+Estructura: Título pequeño arriba (Opacity 70%), Valor grande abajo (Bold).
+
+C. Lista Horaria (Derecha)
+Fondo oscuro sólido (#16172E).
+
+Lista vertical. Cada fila tiene: Icono + Hora (Izquierda) y Temperatura (Derecha).
+
+Separadores: Líneas muy sutiles o simplemente espacio.

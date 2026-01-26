@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Weather app</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/weatherSymbolAsign.css"> 
+
+  <script src="/scripts/cityCoordinates.js"></script>
+  <script src="/scripts/weather.js"></script>
+  <script src="/scripts/formateadorFecha.js"></script>
+  <script src="/scripts/weatherCode.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="/assets/images/logo.svg"> 
+    <button>
+      <img src="/assets/images/icon-units.svg">
+      Units
+      <img src="/assets/images/icon-dropdown.svg">
+    </button>
+    <div id="header-menu">
+                  Switch to Imperial/Metric
+
+              Temperature
+
+              Celsius (°C)
+              Fahrenheit (°F)
+
+              Wind Speed
+
+              km/h
+              mph
+
+              Precipitation
+
+              Millimeters (mm)
+              Inches (in)
+    </div>
+  </header>
+  <main>
+    <h1>How's the sky looking today?</h1>
+    <search id="search-box">
+      <input type="text" id="inputPlace" placeholder="Search for a place....">
+      <button type="submit" onclick="cityFetch()">Search</button>
+    </search>
+
+    <div id="principal">
+      
+        <div id="left-info-A">
+          <div id="countryAndDate">
+            <span id="cityAndCountry"></span>
+            <span id="dateAndDay"></span>
+          </div>
+          <div id="tempBig">
+            <div id="imgTempBig"></div>
+            <span id="tempValue"></span>
+          </div>
+          
+        </div>
+        <div id="left-info-B">
+          <div class="mainDataField">
+            <span class="dataKind">Feels like</span>
+            <span class="dataDate">17°<!-- Insert temperature here --></span>
+          </div>
+          <div class="mainDataField">
+            <span class="dataKind">Humidity</span>
+            <span class="dataDate">46%<!-- Insert humidity here --></span>
+          </div>
+          <div class="mainDataField">
+            <span class="dataKind">Wind</span>
+            <span class="dataDate">9 mph<!-- Insert wind here --></span>
+          </div>
+          <div class="mainDataField">
+            <span class="dataKind"> Precipitation</span>
+            <span class="dataDate">0 in<!-- Insert precipitation here --></span>
+          </div>
+
+        </div>
+        <div id="left-info-C">
+          <span>Daily forecast</span>
+          <!-- Insert daily forecast for the next 7 days here -->
+           <div id="divCardList">
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20°</span>
+                    <span class="dayCardTempMin">15°</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+              <div class="dayCard">
+                <span class="dayCardName">Lunes</span>
+                <div class="dayCardSymbol"></div>
+                <div class="dayCardTemps">
+                    <span class="dayCardTempMax">20</span>
+                    <span class="dayCardTempMin">15</span>
+                </div>
+              </div>
+           </div>
+
+        </div>
+        
+      
+      <div id="right-info">
+        Hourly forecast
+        <!-- Insert hourly forecast for the selected day here -->
+      </div>
+
+  
+  
+    </div>
+ 
+
+  
+
+ 
+
+
+  </main>
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Matiassom</a>.
+  </div>
+</body>
+</html>
