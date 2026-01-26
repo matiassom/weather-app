@@ -7,32 +7,32 @@
 }
 
 .imgTempBig0{
-   background-image: url("/assets/images/cicon-sunny.webp");
+   background-image: url("../assets/images/cicon-sunny.webp");
 }
 .imgTempBig1{
-   background-image: url("/assets/images/cicon-sunny.webp");
+   background-image: url("../assets/images/cicon-sunny.webp");
 }
 .imgTempBig2{
-   background-image: url("/assets/images/cicon-partly-cloudy.webp");
+   background-image: url("../assets/images/cicon-partly-cloudy.webp");
 }
 .imgTempBig3{
-   background-image: url("/assets/images/cicon-overcast.webp");
+   background-image: url("../assets/images/cicon-overcast.webp");
 }
 .imgTempBig45, .imgTempBig48{
-   background-image: url("/assets/images/cicon-fog.webp");
+   background-image: url("../assets/images/cicon-fog.webp");
 }
 .imgTempBig51, .imgTempBig53{
-   background-image: url("/assets/images/cicon-drizzle.webp");
+   background-image: url("../assets/images/cicon-drizzle.webp");
 }
 .imgTempBig61, .imgTempBig63 .imgTempBig65{
-   background-image: url("/assets/images/cicon-rain.webp");
+   background-image: url("../assets/images/cicon-rain.webp");
 }
 .imgTempBig71, .imgTempBig73{
-   background-image: url("/assets/images/cicon-snow.webp");
+   background-image: url("../assets/images/cicon-snow.webp");
 }
 .imgTempBig80, .imgTempBig81 .imgTempBig82{
-   background-image: url("/assets/images/cicon-rain.webp");
+   background-image: url("../assets/images/cicon-rain.webp");
 }
 .imgTempBig95, .imgTempBig96, .imgTempBig99{
-   background-image: url("/assets/images/cicon-storm.webp");
+   background-image: url("../assets/images/cicon-storm.webp");
 }
