@@ -115,7 +115,7 @@ main h1{
     width: 100%;
     height: auto;
     
-    background-image: url("./assets/images/bg-today-large.svg");
+    background-image: url("../assets/images/bg-today-large.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -230,7 +230,7 @@ main h1{
 .dayCardSymbol{
     height: 50px;
     width: 50px;
-    background-image: url("./assets/images/cicon-partly-cloudy.webp");
+    background-image: url("../assets/images/cicon-partly-cloudy.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
