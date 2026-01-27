@@ -24,13 +24,13 @@
 .imgTempBig51, .imgTempBig53{
    background-image: url("../assets/images/cicon-drizzle.webp");
 }
-.imgTempBig61, .imgTempBig63 .imgTempBig65{
+.imgTempBig61, .imgTempBig63, .imgTempBig65{
    background-image: url("../assets/images/cicon-rain.webp");
 }
-.imgTempBig71, .imgTempBig73{
+.imgTempBig71, .imgTempBig73, .imgTempBig77, .imgTempBig85, .imgTempBig86{
    background-image: url("../assets/images/cicon-snow.webp");
 }
-.imgTempBig80, .imgTempBig81 .imgTempBig82{
+.imgTempBig80, .imgTempBig81, .imgTempBig82{
    background-image: url("../assets/images/cicon-rain.webp");
 }
 .imgTempBig95, .imgTempBig96, .imgTempBig99{

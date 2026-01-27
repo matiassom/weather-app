@@ -51,7 +51,10 @@ async function weather(lat,lon) {
             fieldMax[n].innerHTML= datos.daily.temperature_2m_max[n]+"°";
             fieldMin[n].innerHTML= datos.daily.temperature_2m_min[n]+"°";
 
-            CardSymbol[n].classList.add("imgTempBig"+datos.daily.weather_code[n]);
+            CardSymbol[n].className = "";
+            //CardSymbol[n].classList.add("dayCardSymbol imgTempBig"+datos.daily.weather_code[n]);
+            //esta es la linea que aplica el estilo
+            CardSymbol[n].className = "dayCardSymbol imgTempBig"+datos.daily.weather_code[n];
 
             let days = new Date(datos.daily.time[n] + "T00:00:00");    
             dayName[n].innerHTML = days.toLocaleDateString('en-US', { weekday: 'long' });
