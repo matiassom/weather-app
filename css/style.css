@@ -40,6 +40,7 @@ header button{
     justify-content: space-around;
     width: 110px;
     background-color: hsl(243, 23%, 30%);
+    font-family: 'DM Sans';
     color: white;
     border-radius: 10px;  
     border: none;
@@ -205,6 +206,9 @@ main h1{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    
+    font-family: 'DM Sans';
+    color:  hsl(240, 6%, 70%);
   
 }
 
@@ -261,4 +265,28 @@ main h1{
     grid-row-start:1;
     grid-row-end:4;
 
+}
+
+#rightHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'DM Sans';
+    color:  hsl(240, 6%, 70%);
+}
+
+#dayButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    background-color: hsl(243, 23%, 30%);
+    font-family: 'DM Sans';
+    color: white;
+    border-radius: 5px;  
+    border: none;
+    cursor: pointer;
+    padding: .3rem;
 }

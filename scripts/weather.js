@@ -14,13 +14,6 @@ async function weather(lat,lon) {
     const CardSymbol = document.querySelectorAll(".dayCardSymbol");
     const dayName = document.querySelectorAll(".dayCardName")
 
-
-    
-
-
-
-
-
     try{
         const respuesta = await fetch(url);
 
@@ -44,16 +37,11 @@ async function weather(lat,lon) {
         precipitationData.innerHTML = datos.current.precipitation +" "+ datos.current_units.precipitation;
         
     
- 
-
-
         for(n=0;n<7;n++){
             fieldMax[n].innerHTML= datos.daily.temperature_2m_max[n]+"°";
             fieldMin[n].innerHTML= datos.daily.temperature_2m_min[n]+"°";
 
             CardSymbol[n].className = "";
-            //CardSymbol[n].classList.add("dayCardSymbol imgTempBig"+datos.daily.weather_code[n]);
-            //esta es la linea que aplica el estilo
             CardSymbol[n].className = "dayCardSymbol imgTempBig"+datos.daily.weather_code[n];
 
             let days = new Date(datos.daily.time[n] + "T00:00:00");    

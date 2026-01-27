@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
@@ -67,25 +67,24 @@
         <div id="left-info-B">
           <div class="mainDataField">
             <span class="dataKind">Feels like</span>
-            <span class="dataDate" id="feelsLikeTemp"><!-- Insert temperature here --></span>
+            <span class="dataDate" id="feelsLikeTemp"></span>
           </div>
           <div class="mainDataField">
             <span class="dataKind">Humidity</span>
-            <span class="dataDate" id="humidityDate"><!-- Insert humidity here --></span>
+            <span class="dataDate" id="humidityDate"></span>
           </div>
           <div class="mainDataField">
             <span class="dataKind">Wind</span>
-            <span class="dataDate" id="windData"><!-- Insert wind here --></span>
+            <span class="dataDate" id="windData"></span>
           </div>
           <div class="mainDataField">
             <span class="dataKind"> Precipitation</span>
-            <span class="dataDate" id="precipitationData"><!-- Insert precipitation here --></span>
+            <span class="dataDate" id="precipitationData"></span>
           </div>
 
         </div>
         <div id="left-info-C">
           <span>Daily forecast</span>
-          <!-- Insert daily forecast for the next 7 days here -->
            <div id="divCardList">
               <div class="dayCard">
                 <span class="dayCardName"></span>
@@ -149,24 +148,23 @@
         
       
       <div id="right-info">
-        Hourly forecast
-        <!-- Insert hourly forecast for the selected day here -->
-      </div>
+        <div id="rightHead">
+          <span>Hourly forecast</span>
+          <button id="dayButton">Lunes
+            <span id="daySelected"></span>
+            <img src="./assets/images/icon-dropdown.svg">
+          </button>
+        </div>
+        <div id="daysList">
 
-  
-  
+        </div>
+        
+      </div>
+ 
     </div>
  
-
-  
-
- 
-
-
   </main>
  
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Matiassom</a>.
