@@ -15,33 +15,42 @@
   <script src="./scripts/weather.js"></script>
   <script src="./scripts/formateadorFecha.js"></script>
   <script src="./scripts/weatherCode.js"></script>
+  <script src="./scripts/unitsButton.js"></script>
 </head>
 
 <body>
   <header>
+
     <img src="./assets/images/logo.svg"> 
-    <button>
-      <img src="./assets/images/icon-units.svg">
-      Units
-      <img src="./assets/images/icon-dropdown.svg">
-    </button>
-    <div id="header-menu">
-                  Switch to Imperial/Metric
 
-              Temperature
+    <div id="divMenuUnits">
+      <button id="unitsButton" onclick="unitsButton()">
+        <img src="./assets/images/icon-units.svg">
+        Units
+        <img src="./assets/images/icon-dropdown.svg">
+      </button>
+      <div id="header-menu" hidden> 
+                
+                <label id="imperialMetric" onclick="switchMI()">Switch to Metric</label>
+                
 
-              Celsius (°C)
-              Fahrenheit (°F)
+                <label class="menuSmall">Temperature</label>
 
-              Wind Speed
+                <label>Celsius (°C)</label>
+                <label>Fahrenheit (°F)</label>
 
-              km/h
-              mph
+                <hr>
+                <label class="menuSmall">Wind Speed</label>
 
-              Precipitation
+                <label>km/h</label>
+                <label>mph</label>
 
-              Millimeters (mm)
-              Inches (in)
+                <hr>
+                <label class="menuSmall">Precipitation</label>
+
+                <label>Millimeters (mm)</label>
+                <label>Inches (in)</label>
+      </div>
     </div>
   </header>
   <main>
