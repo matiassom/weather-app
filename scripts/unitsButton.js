@@ -8,18 +8,35 @@ function unitsButton(){
 
 function switchMI(){
     const imperialMetric = document.getElementById("imperialMetric");
+    let metricData = document.querySelectorAll(".metricData");
+    let imperialData = document.querySelectorAll(".imperialData");
 
-    console.log(imperialMetric.innerHTML);
+    if(imperialMetric.innerHTML=="Switch to Imperial"){
+        imperialMetric.innerHTML="Switch to Metric";
 
-    imperialMetric.innerHTML=="Switch to Imperial"?
-    imperialMetric.innerHTML="Switch to Metric":
-    imperialMetric.innerHTML="Switch to Imperial";
+        
 
 
-    //imperialMetric.innerHTML = "Switch to Imperial";
+
+          metricData.forEach(element => {
+            element.style.color ="hsl(240, 6%, 70%)";
+        });
+
+        imperialData.forEach(element=>{
+            element.style.color ="hsl(0, 0%, 100%)";
+        }) 
+    } else{
+        imperialMetric.innerHTML="Switch to Imperial";
+        metricData.forEach(element => {
+            element.style.color = "hsl(0, 0%, 100%)";
+        });
+
+        imperialData.forEach(element=>{
+            element.style.color = " hsl(240, 6%, 70%)";
+        })
+
+      
+    }
+     
 }
 
-/*
-
-<label >Switch to Imperial</label>
-                <label onclick="switchMI()">Switch to Metric</label>*/
